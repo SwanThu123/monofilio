@@ -1,0 +1,311 @@
+:root{
+    --primary-color: #f0f0f3;
+    --box-shadow:3px 3px 8px -2px rgba(0,0,0,0.5), -3px -3px 3px 3px rgba(255,255,255,0.5);
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+}
+body{
+max-width: 800px;
+margin: auto;
+background-color: #f0f0f3;
+}
+.nav{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.brand-name{
+    font-size: 2rem;
+    background:linear-gradient(to right,red,blue);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;   
+}
+.icon-name{
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border-radius: 50%;
+    box-shadow:var(--box-shadow);
+ 
+}
+.icon-name i{
+    font-size: 20px;
+    color: #7889b3;
+    animation: icon 2s infinite linear;
+}
+.main_Section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.my-world{
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 70px 10px 15px 10px;
+    transition: 1s all linear;
+}
+.my-world-text{
+    margin: 20px 0;
+    color: #7889b3;
+}
+.news_text{
+    position: relative;
+    top: 23px;
+}
+span{
+    color: #7889b3;
+}
+
+.my-world-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    top: 20px;
+}
+button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid
+    ;
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+    margin-left: 340px;
+    top: 13px;
+   
+}
+.my-world-footer span{
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    color: #7889b3;
+    text-transform: uppercase;
+    padding-top: 3px;
+    
+}
+.jake_header{
+    position: relative;
+    top: -5px;
+}
+.jake{
+    
+    /* margin-top: 32px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bold_icon{
+    font-size: 2rem;
+    background:linear-gradient(to right,red,blue);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text; 
+
+    
+}
+#my-info{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 0 9px;
+}
+#my-news{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 20px;
+}
+
+#my-info img{
+    width: 85px;
+    height: 85px;
+}
+
+.What_I_Do{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+    
+}
+.What_I_Do_footer{
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+}
+.What_I_Do_btn{
+    position: relative;
+    left: 97%;
+    top: 19px;
+}
+p{
+    margin-top: 10px;
+    color: #7889b3;
+}
+.newpaper{
+    position: relative;
+    top: -10px;
+}
+.mail
+{
+    font-size: 70px;
+   position: relative;
+   left: 30%;background:linear-gradient(to right,red,blue);
+   background-clip: text;
+   color: transparent;
+   -webkit-background-clip: text; 
+}
+.mail_footer{
+    position: relative;
+    top: 24%;
+}
+input{
+    padding: 7px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 1px 1px 2px 1px black, inset -1px -1px 2px 1px rgb(247, 234, 234) ;
+  
+}
+input:focus{
+    border: 0;
+    outline: 0;
+}
+.news_span{
+    padding: 5px 5px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin-left: 10px;
+}
+.arrows{
+    position: absolute;
+    top: 100%;
+    left: -70%;
+   
+      transform: translateX(50%);
+      transform: translateY(50%);
+      transform: rotate(-45deg);
+    
+     
+  }
+  .arrow1{
+      position: absolute;
+      transform: translateX(50%);
+      transform: translateY(50%);
+      top: 10%;
+      left: 17%;
+      transform: rotate(-45deg);
+  }
+  li{
+    list-style: none;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  ul li:nth-child(1){
+    background:linear-gradient(to right,red,blue);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 20px;
+    font-weight: 900; 
+  }
+  ul button{
+    border: none;
+    box-shadow: var(--box-shadow);
+  }
+@keyframes icon{
+    100%{
+        transform: rotate(1turn);
+    }
+}
+.my-world:hover{
+    box-shadow:3px 3px 8px 2px rgba(0,0,0,0.5), -3px -3px 3px 4px rgba(255,255,255,0.5);
+}
+button:hover .arrows{
+    top: 10%;
+    left: 17%; 
+    transition: 0.5s all linear;
+}
+button:hover .arrow1{
+    top: -50%;
+    left: 70%;
+    transition: 0.5s all linear;
+}
+@media(max-width: 768px){
+    body{
+        padding: 0 20px;
+    }
+    .btn{
+       left: -50px;
+    }
+    .works{
+        margin-top: 50px;
+    }
+    .jake{
+        margin-top: 40px;
+    }
+}
+@media(max-width:426px){
+    .news_footer{
+        padding-bottom: 20px;
+    }
+    .btn{
+        margin-left: 300px;
+    }
+    .jake{
+        padding-bottom: 10px;
+    }
+    .see-more{
+        margin-top: 75px;
+    }
+    .main_Section{
+grid-template-columns: repeat(2,1fr);
+    }
+    #my-info,.What_I_Do,#my-news{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .main_Section .my-world:first-child ,#mail1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .btn{
+       left: -30px;
+    }
+    .mail_footer{
+        top: -1px;
+    }
+    .mail{
+        top: -20px;
+    }
+    #resume,#pencil{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    #my-info{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #newsletter{
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+}
